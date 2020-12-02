@@ -53,8 +53,7 @@ IF(BINDINGS_QT5)
                 SET(BINDINGS_QT5  OFF)
         ELSE(BINDINGS_QT4)
                 FIND_PACKAGE(Qt5 COMPONENTS Core Widgets LinguistTools REQUIRED)
-                # Do not automatically link against qtmain
-                CMAKE_POLICY(SET CMP0020 OLD)
+                # Do not automatically link against qtmain?
         ENDIF(BINDINGS_QT4)
 ENDIF(BINDINGS_QT5)
 # enable automatic moc by CMAKE
